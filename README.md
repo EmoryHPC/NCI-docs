@@ -18,3 +18,8 @@ pbsnodes -a
 module purge
 module load ENTER
 ```
+
+
+3. Check your jobs and assigned nodes
+
+qstat -u $USER
