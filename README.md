@@ -52,6 +52,12 @@ qsub -I -q gpuvolta -l walltime=1:00:00,ncpus=8,mem=32GB,ngpus=1,jobfs=50GB,wd,s
 
 ```
 
-to describe the needed resources: 
+to describe the needed resources. 
+
+
+Interactive session: 
+
+# CPU interactive session (normal queue)
+qsub -I -q normal -l walltime=01:00:00,ncpus=4,mem=16GB,jobfs=10GB,storage=gdata/<proj>+scratch/<proj>,wd
 
 
