@@ -51,3 +51,7 @@ qsub -I -q hugemem -l walltime=1:00:00,ncpus=8,mem=512GB,wd,storage=gdata/<proj>
 qsub -I -q gpuvolta -l walltime=1:00:00,ncpus=8,mem=32GB,ngpus=1,jobfs=50GB,wd,storage=gdata/<proj>+scratch/<proj>
 
 ```
+
+to describe the needed resources: 
+
+
