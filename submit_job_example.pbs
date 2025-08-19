@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -P <your_project_code>
+#PBS -q normal
+#PBS -l walltime=01:00:00
+#PBS -l ncpus=4
+#PBS -l mem=16GB
+#PBS -l jobfs=10GB
+#PBS -l storage=gdata/<your_project_code>+scratch/<your_project_code>
+#PBS -l wd
+
+# -------------------------------
+# Job steps
+# -------------------------------
+echo "Job running on host: $(hostname)"
+echo "Job started at: $(date)"
+
+# Load required modules
+module load python3/3.11.5
+
+# Run your program
+python myscript.py
+
+echo "Job finished at: $(date)"
