@@ -2,7 +2,7 @@
 
 on NCI Gadi, the scheduler is PBS Pro not Slurm. 
 
-see available nodes: 
+see all nodes: 
 
 ```
 qstat -Q
