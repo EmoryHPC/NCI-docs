@@ -8,6 +8,12 @@ see all nodes:
 qstat -Q
 ```
 
+See node details
+
+```
+pbsnodes -a
+```
+
 ```
 module purge
 module load ENTER
