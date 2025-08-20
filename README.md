@@ -50,6 +50,15 @@ qsub -I -q hugemem -l walltime=1:00:00,ncpus=8,mem=512GB,wd,storage=gdata/<proj>
 # GPU job (V100 queue name on Gadi is often gpuvolta)
 qsub -I -q gpuvolta -l walltime=1:00:00,ncpus=8,mem=32GB,ngpus=1,jobfs=50GB,wd,storage=gdata/<proj>+scratch/<proj>
 
+qsub download_llama.pbs
+
+```
+
+
+Check the job queue: 
+
+```
+qstat -u $USER
 ```
 
 to describe the needed resources. 
@@ -59,5 +68,6 @@ Interactive session:
 
 # CPU interactive session (normal queue)
 qsub -I -q normal -l walltime=01:00:00,ncpus=4,mem=16GB,jobfs=10GB,storage=gdata/<proj>+scratch/<proj>,wd
+
 
 
